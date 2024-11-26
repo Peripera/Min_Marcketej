@@ -6,8 +6,8 @@ void Inventory::addProduct(string &name, int cantidad) {
 
 int Inventory::getProduct(string &name) {
     auto id = products.find(name);
-    id(id != products.end()) {
-        reutnr id -> second; // referenciación a segundo elemento
+    if (id != products.end()) {
+        return id -> second; // referenciación a segundo elemento
     }
     return -1;
 }
